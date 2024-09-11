@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container max-w-[450px] m-auto">
+      <a href="./index.html" class="text-[19px] relative top-2 left-[18px]">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <div class="flex justify-center w-full my-24">
+        <img src="./public/assets/images/logo.png" alt="logo" />
+      </div>
+      <h2 class="flex justify-center text-[30px] font-Inter font-semibold">
+        Login to Your Account
+      </h2>
+      <form id="login-form" class="flex justify-center flex-col gap-8 mt-8">
+        <div class="relative flex justify-center w-[80%] m-auto">
+          <div class="absolute left-[-7px] top-[8px] h-[16px] flex">
+            <i class="fas fa-envelope text-[#6C757D]"></i>
+          </div>
+          <input
+            id="inputEnvelope"
+            name="username"
+            class="w-[85%] border-0 focus:outline-none focus:ring-0 p-[5px] rounded"
+            type="text"
+            placeholder="Username"
+          />
+        </div>
+        <div class="relative flex justify-center w-[80%] m-auto">
+          <div class="absolute left-[-7px] top-[8px] h-[17px] flex">
+            <i class="fas fa-lock text-[#6C757D]"></i>
+          </div>
+          <input
+            id="inputPassword"
+            name="password"
+            class="w-[85%] border-0 focus:outline-none focus:ring-0 p-[5px] rounded"
+            type="password"
+            placeholder="Password"
+          />
+          <i
+            class="fas fa-eye-slash absolute top-[0.19rem] right-[10px] text-[#6C757D] text-sm"
+          ></i>
+        </div>
+        <a
+          href="./signup"
+          class="flex justify-center mt-3 text-sm font-medium font-Inter"
+          >Signup</a
+        >
+        <button
+          type="submit"
+          class="text-sm font-medium font-Inter bg-[#6E7174] text-white w-[90%] rounded-full m-auto flex justify-center items-center mt-[15.5rem] py-3"
+          id="Submit"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+    <script type="module" defer src="./main.js"></script>
+    <script type="module" defer src="./src/scripts/login.js"></script>
+    <script type="module" defer src="./src/libs/register-form-ui.js"></script>
+  </body>
+</html>
